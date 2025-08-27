@@ -1,2 +1,3 @@
 # Final_Exam_FRANKLIN_EKWALE
-Final Exam
+JavaScript Final Exam
+This is my final exam
