@@ -51,6 +51,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #2563eb;
+}
+
 label {
     display: block;
     font-weight: bold;
