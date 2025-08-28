@@ -1,66 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Final Exam</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1>JavaScript Final Exam</h1>
+      <p class="subtitle">IST103 • Fundamentals Demonstration</p>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! My name is Franklin Ekwale. I enjoy learning web development and creating simple projects.</p>
-      <p>This portfolio is part of my exam project, showing my basic HTML and CSS skills.</p>
+  <main class="container">
+    <section id="basics" class="card fade-in">
+      <h2>JavaScript Basics</h2>
+
+      <div class="grid-2">
+        <article aria-labelledby="movies-title">
+          <h3 id="movies-title">Favorite Movies</h3>
+          <ul id="movies-list" class="pretty-list" aria-live="polite"></ul>
+        </article>
+
+        <article aria-labelledby="student-title">
+          <h3 id="student-title">Student Information</h3>
+          <div id="student-info" class="info-block" aria-live="polite"></div>
+        </article>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>My Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git & GitHub</li>
-        <li>Problem Solving</li>
-        <li>Teamwork</li>
-      </ul>
+    <section id="logic" class="card fade-in">
+      <h2>Functions & Logic</h2>
+      <div class="grid-2">
+        <article aria-labelledby="square-title">
+          <h3 id="square-title">Square Function Results</h3>
+          <div id="square-results" class="info-block"></div>
+        </article>
+
+        <article aria-labelledby="loops-title">
+          <h3 id="loops-title">Loop Results</h3>
+          <p id="loop-sum" class="result-big"></p>
+          <p class="hint">Open your browser console to see numbers 1–10 from the for-loop.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+    <section id="bg" class="card fade-in">
+      <h2>Background Color Changer</h2>
+      <p>Click to change the page’s background to a random color.</p>
+      <button id="change-bg" class="btn">Change Background</button>
+    </section>
+    
+    <section id="contact" class="card fade-in">
+      <h2>Contact Form</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+          <small id="name-error" class="error" aria-live="polite"></small>
+        </div>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="text" inputmode="email" />
+          <small id="email-error" class="error" aria-live="polite"></small>
+        </div>
 
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject" placeholder="Message subject"><br><br>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4"></textarea>
+          <small id="message-error" class="error" aria-live="polite"></small>
+        </div>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea><br><br>
-
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <button type="submit" class="btn">Submit</button>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
       </form>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Franklin Ekwale. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <small>Made with pure HTML, CSS, and JavaScript</small>
+    </div>
   </footer>
+      <script src="script.js"></script>
+
 </body>
 </html>
