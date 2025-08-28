@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Final Exam</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>JavaScript Final Exam</h1>
+      <p class="subtitle">IST103 • Fundamentals Demonstration</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="basics" class="card fade-in">
+      <h2>JavaScript Basics</h2>
+
+      <div class="grid-2">
+        <article aria-labelledby="movies-title">
+          <h3 id="movies-title">Favorite Movies</h3>
+          <ul id="movies-list" class="pretty-list" aria-live="polite"></ul>
+        </article>
+
+        <article aria-labelledby="student-title">
+          <h3 id="student-title">Student Information</h3>
+          <div id="student-info" class="info-block" aria-live="polite"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="logic" class="card fade-in">
+      <h2>Functions & Logic</h2>
+      <div class="grid-2">
+        <article aria-labelledby="square-title">
+          <h3 id="square-title">Square Function Results</h3>
+          <div id="square-results" class="info-block"></div>
+        </article>
+
+        <article aria-labelledby="loops-title">
+          <h3 id="loops-title">Loop Results</h3>
+          <p id="loop-sum" class="result-big"></p>
+          <p class="hint">Open your browser console to see numbers 1–10 from the for-loop.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="bg" class="card fade-in">
+      <h2>Background Color Changer</h2>
+      <p>Click to change the page’s background to a random color.</p>
+      <button id="change-bg" class="btn">Change Background</button>
+    </section>
+    
+    <section id="contact" class="card fade-in">
+      <h2>Contact Form</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+          <small id="name-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="text" inputmode="email" />
+          <small id="email-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4"></textarea>
+          <small id="message-error" class="error" aria-live="polite"></small>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Made with pure HTML, CSS, and JavaScript</small>
+    </div>
+  </footer>
+      <script src="script.js"></script>
+
+</body>
+</html>
