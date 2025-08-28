@@ -43,17 +43,14 @@ li {
 }
 
 button {
-    background-color: #3b82f6;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
 }
 
 button:hover {
-    background-color: #2563eb;
-}
+  background-color: #008CBA;
+  color: white;
 
 label {
     display: block;
